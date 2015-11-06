@@ -128,7 +128,8 @@ namespace Bend.Util
         }
         public override void handleSensorRequest(HttpProcessor p)
         {
-            Console.WriteLine("Success! Add Wise functionality here!");
+            Console.WriteLine("Success! Add Wise functionality here! Sending Response from server.");
+            p.outputStream.Write("Repsonse from server! This data is JSON!");
         }
     }
 
